@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="blackHole" cx="50%" cy="40%" r="60%" fx="50%" fy="40%">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="15%" stop-color="#0a0012"/>
+      <stop offset="30%" stop-color="#1a0a2e"/>
+      <stop offset="50%" stop-color="#2d1b4e"/>
+      <stop offset="70%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#0a0012"/>
+    </radialGradient>
+    <radialGradient id="glow1" cx="50%" cy="35%" r="35%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="60%" stop-color="#7c3aed" stop-opacity="0.3"/>
+      <stop offset="80%" stop-color="#a855f7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="45%" r="25%">
+      <stop offset="0%" stop-color="#000"/>
+      <stop offset="70%" stop-color="#000"/>
+      <stop offset="85%" stop-color="#9333ea" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.3"/>
+    </radialGradient>
+    <radialGradient id="innerRing" cx="50%" cy="40%" r="20%">
+      <stop offset="70%" stop-color="transparent"/>
+      <stop offset="85%" stop-color="#f472b6" stop-opacity="0.4"/>
+      <stop offset="95%" stop-color="#ec4899" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="30"/>
+    </filter>
+    <filter id="blur2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15"/>
+    </filter>
+  </defs>
+  
+  <!-- Base background -->
+  <rect width="100%" height="100%" fill="#050208"/>
+  
+  <!-- Main cosmic gradient -->
+  <rect width="100%" height="100%" fill="url(#blackHole)"/>
+  
+  <!-- Outer glow -->
+  <ellipse cx="960" cy="380" rx="700" ry="400" fill="url(#glow1)" filter="url(#blur1)"/>
+  
+  <!-- Purple nebula glow -->
+  <ellipse cx="960" cy="430" rx="500" ry="280" fill="url(#glow2)" filter="url(#blur2)"/>
+  
+  <!-- Inner pink ring -->
+  <ellipse cx="960" cy="400" rx="350" ry="200" fill="url(#innerRing)" filter="url(#blur2)"/>
+  
+  <!-- Accent streaks -->
+  <ellipse cx="960" cy="400" rx="180" ry="100" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.3" filter="url(#blur2)"/>
+  <ellipse cx="960" cy="400" rx="250" ry="140" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.2" filter="url(#blur1)"/>
+  
+  <!-- Stars -->
+  <g fill="#fff">
+    <circle cx="150" cy="120" r="1" opacity="0.8"/>
+    <circle cx="320" cy="80" r="0.8" opacity="0.6"/>
+    <circle cx="580" cy="150" r="1.2" opacity="0.9"/>
+    <circle cx="780" cy="60" r="0.6" opacity="0.5"/>
+    <circle cx="1100" cy="100" r="1" opacity="0.7"/>
+    <circle cx="1350" cy="180" r="0.8" opacity="0.6"/>
+    <circle cx="1550" cy="90" r="1.1" opacity="0.8"/>
+    <circle cx="1750" cy="150" r="0.7" opacity="0.5"/>
+    <circle cx="200" cy="800" r="0.9" opacity="0.6"/>
+    <circle cx="450" cy="920" r="1" opacity="0.7"/>
+    <circle cx="700" cy="850" r="0.8" opacity="0.5"/>
+    <circle cx="1200" cy="900" r="1.2" opacity="0.8"/>
+    <circle cx="1500" cy="820" r="0.7" opacity="0.6"/>
+    <circle cx="1700" cy="950" r="1" opacity="0.7"/>
+    <circle cx="100" cy="500" r="0.8" opacity="0.5"/>
+    <circle cx="1820" cy="450" r="0.9" opacity="0.6"/>
+  </g>
+</svg>

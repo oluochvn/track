@@ -1,0 +1,20 @@
+{
+  "name": "paytrack-root",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix paytrack\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix paytrack",
+    "build": "npm run build --prefix paytrack",
+    "start": "npm run start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
